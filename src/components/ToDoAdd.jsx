@@ -29,21 +29,24 @@ function ToDoAddPage() {
       <div className="flex flex-col">
         <label htmlFor="task">Task</label>
         <input
+          placeholder="Task name"
           type="text"
           name="task"
           required=""
-          className=" text-black"
+          className=" text-black rounded-md"
           onChange={handleChange}
         />
         <label htmlFor="description">Description</label>
         <textarea
-          className="text-black"
+          className="text-black rounded-md"
+          placeholder="Task description"
+          rows="4"
           name="description"
           required=""
           onChange={handleChange}
         ></textarea>
-        <button className="mt-4 bg-gradient-to-r from-purple-600 via-purple-400 to-blue-500 text-white px-4 py-2 font-bold rounded-md hover:opacity-80">
-          Enviar
+        <button className="mt-4 text-white bg-cyan-500 shadow-lg shadow-cyan-500/50">
+          Send
         </button>
       </div>
     </form>
